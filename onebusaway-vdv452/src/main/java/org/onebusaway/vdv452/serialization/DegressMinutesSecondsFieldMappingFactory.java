@@ -41,7 +41,7 @@ public class DegressMinutesSecondsFieldMappingFactory implements FieldMappingFac
   
   private static class Impl extends AbstractFieldMapping implements Converter {
     
-    private static final Pattern FORMAT = Pattern.compile("^(-{0,1}\\d{2,3})(\\d{2})(\\d{2})(\\d{3})$");
+    private static final Pattern FORMAT = Pattern.compile("^(-{0,1}\\d{1,3})(\\d{2})(\\d{2})(\\d{3})$");
 
     public Impl(Class<?> entityType, String csvFieldName, String objFieldName,
         boolean required) {
